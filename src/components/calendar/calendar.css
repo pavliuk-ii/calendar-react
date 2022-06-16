@@ -1,0 +1,89 @@
+.calendar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+
+.calendar-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-week {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calendar-day {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-day:hover {
+  background-color: rgb(167, 234, 255, 0.3);
+}
+
+.calendar-day.selected {
+  background-color: rgb(167, 234, 255);
+}
+.calendar-day.today {
+  background-color: rgba(167, 234, 255, 0.336);
+}
+.calendar-day.outside-month {
+  background-color: rgba(238, 238, 238, 0.336);
+}
+
+.calendar-month-picker {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .5em 0;
+  border-bottom: 1px solid rgba(236, 236, 236);
+}
+
+.month-button,
+.reset-date {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.month-button:hover,
+.month-button:active,
+.reset-date:hover,
+.reset-date:active {
+  background-color: rgb(167, 234, 255, 0.3);
+  border-radius: 50%;
+}
+
+.month-label {
+}
+
+.icon {
+  height: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+  align-items: center;
+  border-bottom: 1px solid rgba(236, 236, 236);
+}
+
+label {
+  margin: 1em 0;
+  padding: 0.3em;
+  background-color: rgba(236, 236, 236, 0.1);
+  border: 1px solid rgba(236, 236, 236);
+  display: inline-block;
+}
