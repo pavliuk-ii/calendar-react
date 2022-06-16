@@ -1,8 +1,6 @@
-import { DateTime } from "luxon"
-
 export default function buildCalendar(selectedDay) {
   const calendar = []
-  const monthStartDay = selectedDay.startOf('month').minus({ days: 1 }).startOf('week')
+  const monthStartDay = selectedDay.startOf('month').startOf('week')
   const monthEndDay = selectedDay.endOf('month').endOf('week')
 
   let calendarDay = monthStartDay.startOf('day')
