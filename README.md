@@ -1,7 +1,9 @@
 # A simple calendar component
 
-Made as university project
+Made as task in university.
 
 ## Running the script
 
-### `npm start`
+```
+npm start
+```
